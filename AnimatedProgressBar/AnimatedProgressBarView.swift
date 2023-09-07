@@ -15,7 +15,6 @@ class AnimatedProgressBarView: UIView {
     
     private lazy var completedFromTotal: UILabel = {
         let label = UILabel()
-        label.text = "0 out 0 tasks completed"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -80,15 +79,19 @@ class AnimatedProgressBarView: UIView {
     
     
     func configureProgressBar(completedTasks: Int){
+        completedFromTotal.text = "\(completedTasks) out of \(totalTasks) tasks completed"
+        
         cardStack.layoutSubviews()
         progressBarContainer.layoutSubviews()
         button.layoutSubviews()
+        layoutSubviews()
         
-        let percentageWidth = emptyProgressBar.frame.width * 0.7
+        let progress = Double(completedTasks) / Double(totalTasks)
+        let percentageWidth = emptyProgressBar.frame.width * progress
         
         self.progressBar.widthAnchor.constraint(equalToConstant: percentageWidth).isActive = true
         
-        UIView.animate(withDuration: 2, delay: 0, options: .curveEaseIn) { [self] in
+        UIView.animate(withDuration: 2, delay: 4, options: .curveEaseIn) { [self] in
             self.layoutIfNeeded()
         }
     }
