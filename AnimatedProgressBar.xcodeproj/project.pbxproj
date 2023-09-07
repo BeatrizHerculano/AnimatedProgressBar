@@ -10,12 +10,12 @@
 		D039123B2A94D66200485D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039123A2A94D66200485D88 /* AppDelegate.swift */; };
 		D039123D2A94D66200485D88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039123C2A94D66200485D88 /* SceneDelegate.swift */; };
 		D039123F2A94D66200485D88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039123E2A94D66200485D88 /* ViewController.swift */; };
-		D03912422A94D66200485D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03912402A94D66200485D88 /* Main.storyboard */; };
 		D03912442A94D66400485D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03912432A94D66400485D88 /* Assets.xcassets */; };
 		D03912472A94D66400485D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03912452A94D66400485D88 /* LaunchScreen.storyboard */; };
 		D03912522A94D66400485D88 /* AnimatedProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03912512A94D66400485D88 /* AnimatedProgressBarTests.swift */; };
 		D039125C2A94D66400485D88 /* AnimatedProgressBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039125B2A94D66400485D88 /* AnimatedProgressBarUITests.swift */; };
 		D039125E2A94D66400485D88 /* AnimatedProgressBarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D039125D2A94D66400485D88 /* AnimatedProgressBarUITestsLaunchTests.swift */; };
+		D053BB002AA0ACB0007CB92E /* AnimatedProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D053BAFF2AA0ACB0007CB92E /* AnimatedProgressBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		D039123A2A94D66200485D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D039123C2A94D66200485D88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D039123E2A94D66200485D88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D03912412A94D66200485D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D03912432A94D66400485D88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D03912462A94D66400485D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D03912482A94D66400485D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		D03912572A94D66400485D88 /* AnimatedProgressBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedProgressBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D039125B2A94D66400485D88 /* AnimatedProgressBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedProgressBarUITests.swift; sourceTree = "<group>"; };
 		D039125D2A94D66400485D88 /* AnimatedProgressBarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedProgressBarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D053BAFF2AA0ACB0007CB92E /* AnimatedProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedProgressBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +102,10 @@
 				D039123A2A94D66200485D88 /* AppDelegate.swift */,
 				D039123C2A94D66200485D88 /* SceneDelegate.swift */,
 				D039123E2A94D66200485D88 /* ViewController.swift */,
-				D03912402A94D66200485D88 /* Main.storyboard */,
 				D03912432A94D66400485D88 /* Assets.xcassets */,
 				D03912452A94D66400485D88 /* LaunchScreen.storyboard */,
 				D03912482A94D66400485D88 /* Info.plist */,
+				D053BAFF2AA0ACB0007CB92E /* AnimatedProgressBarView.swift */,
 			);
 			path = AnimatedProgressBar;
 			sourceTree = "<group>";
@@ -233,7 +233,6 @@
 			files = (
 				D03912472A94D66400485D88 /* LaunchScreen.storyboard in Resources */,
 				D03912442A94D66400485D88 /* Assets.xcassets in Resources */,
-				D03912422A94D66200485D88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D053BB002AA0ACB0007CB92E /* AnimatedProgressBarView.swift in Sources */,
 				D039123F2A94D66200485D88 /* ViewController.swift in Sources */,
 				D039123B2A94D66200485D88 /* AppDelegate.swift in Sources */,
 				D039123D2A94D66200485D88 /* SceneDelegate.swift in Sources */,
@@ -297,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D03912402A94D66200485D88 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D03912412A94D66200485D88 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D03912452A94D66400485D88 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,7 +435,6 @@
 				INFOPLIST_FILE = AnimatedProgressBar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +461,6 @@
 				INFOPLIST_FILE = AnimatedProgressBar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

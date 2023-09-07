@@ -8,12 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let contentView = AnimatedProgressBarView(totalTasks: 10)
+    let completedTasks = 7
+    
     override func viewDidLoad() {
+        view = contentView
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        contentView.configureProgressBar(completedTasks: completedTasks)
+    }
 
 }
 
